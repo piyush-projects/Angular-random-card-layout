@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  height: 100%;
+  background-color: #cdcdcd;
+  @media (max-width: 375px) {
+    flex-flow: column;
+  }
+
+  @media (min-width: 1024px) {
+    flex-flow: row wrap;
+  }
+
+  .first-container {
+
+    @media (max-width: 375px) {
+      order: 2;
+      flex-basis: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      flex-basis: 80%;
+    }
+  }
+
+  .second-container {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 375px) {
+      order: 1;
+      flex-basis: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      flex-basis: 20%;
+    }
+  }
+
+  .third-container {
+    flex-basis: 100%;
+    order: 3;
+  }
+}

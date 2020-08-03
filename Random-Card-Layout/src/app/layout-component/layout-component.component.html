@@ -1,0 +1,5 @@
+<div class="container">
+  <div *ngFor="let availableColor of this.availableColors" class="tile" [style.background]="getBackgroundColor(availableColor)">
+    {{availableColor.index}}
+  </div>
+</div>
